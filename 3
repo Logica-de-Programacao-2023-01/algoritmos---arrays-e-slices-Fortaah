@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	array := [4]float64{1.2, 2.3, 3.4, 4.5}
+
+	product := 1.0
+
+	for _, valor := range array {
+		product *= valor
+	}
+	fmt.Println("O product dos valores armazenados na Array é igual a:", product)
+}

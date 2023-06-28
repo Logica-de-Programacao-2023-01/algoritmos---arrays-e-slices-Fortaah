@@ -1,0 +1,25 @@
+package main
+
+import "fmt"
+
+func main() {
+	var number int
+	fmt.Print("Digite um número: ")
+	fmt.Scan(&number)
+
+	var cousins []int
+
+	for i := 2; i <= number; i++ {
+		cousins := true
+		for j := 2; j < i; j++ {
+			if i%j == 0 {
+				cousins = false
+				break
+			}
+		}
+		if cousins {
+			cousins = append(cousins, i)
+		}
+	}
+	fmt.Println(cousins)
+}

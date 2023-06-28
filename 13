@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+	var frist int
+	var ultimo int
+	array := []int{1, 2, 3, 4, 5, 6, 7}
+	fmt.Println("Array atual:", array)
+	fmt.Print("Escreva um numero que será adicionado ao frist e último elemento: ")
+	fmt.Scan(&frist)
+	fmt.Scan(&ultimo)
+	array[0] = array[0] + frist
+	array[6] = array[6] + ultimo
+	fmt.Println("Novo array:", array)
+}
